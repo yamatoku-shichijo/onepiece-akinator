@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    // このユーザとrecordsの関係
+    public function user_records()
+    {
+        return $this->belongsToMany(Character::class , 'records' , 'user_id' , 'character_id')->withTimestamps();
+    }
 }
