@@ -1,5 +1,5 @@
 {{-- キャラクター覧ページへのリンク --}}
-<li><a class="link link-hover" href="#">キャラデータ</a></li>
+<li><a class="link link-hover" href="{{ route('questions.create') }}">キャラデータ</a></li> {{-- 問題作成を試している あとで直す --}}
 {{-- 記録室ページへのリンク --}}
 <li><a class="link link-hover" href="#">記録室</a></li>
 {{-- ログアウトへのリンク --}}
